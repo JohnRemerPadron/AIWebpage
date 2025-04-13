@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: url("pilas.jpeg") no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 100px;
+      position: relative;
+		
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+    header h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3rem;
+		font-family: "Montserrat Medium", Montserrat;
+    }
+    nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    .tagline {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #444;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+.gallery2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+.gallery2 img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: #222;
+      color: white;
+    }
+    .section {
+      flex: 1 1 300px;
+      margin: 10px;
+      padding: 20px;
+      background: #333;
+      border-radius: 10px;
+      text-align: center;
+    }
+.section{
+	 font-family: "Montserrat Medium";
+}
+    .section img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .section button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #f90;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+	  src: url(href="https://johnremerpadron.github.io/BlogPage/");
+    }
+    @media (max-width: 768px) {
+      .gallery, .sections {
+        flex-direction: column;
+        align-items: center;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        position: static;
+        margin-top: 10px;
+      }
+    }
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
