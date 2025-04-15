@@ -76,11 +76,30 @@
       cursor: pointer;
 	  src: url(href="https://johnremerpadron.github.io/BlogPage/");
     }
-    @media (max-width: 768px) {
-     .sections {
+    @media (max-width: 700px) {
+     .sections, .section, .farright {
         flex-direction: column;
         align-items: center;
       }
+		@media screen and (max-width: 700px) {
+   .navbar {   
+     position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
+  }
+}
+		/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+	.gallery, .gallery-items, .item, .farright, .sections, .section { 
+    flex-direction: column;
+		align-items: center;
+		  top: 20px;
+      right: 20px;
+      z-index: 2;
+  }
+}
+
       header h1 {
         font-size: 2rem;
       }
